@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="stylePage.css">
+</head>
+
+<body>
+
+    <div class="row first">
+        <div class="col-8">
+            <h1>Create your own bouquet</h1>
+        </div>
+        <div class="col-4 pic">&nbsp;</div>
+    </div>
+
+    <div class="row second">
+        <div class="col-4">
+            <label for="ruze">Roses</label>
+            <input type="number" name="ruze" id="ruze" placeholder="Price per one: 150 RSD" >
+            <br>
+
+            <label for="ljiljani">Lilies</label>
+            <input type="number" name="ljiljani" id="ljiljani" placeholder="Price per one: 120 RSD" >
+            <br>
+
+            <label for="gerberi">Gerbera</label>
+            <input type="number" name="gerberi" id="gerberi" placeholder="Price per one: 70 RSD" >
+        </div>
+
+        <div class="col-4">
+            <h2>Extra gifts:</h2>
+            <input type="checkbox" name="pokloni" id="bombonjera" value="Candy bar"> Candy bar
+            <input type="checkbox" name="pokloni" id="cokolada" value="Chocolate"> Chocolate
+            <input type="checkbox" name="pokloni" id="sampanjac" value="Champagne"> Champagne
+        </div>
+
+        <div class="col-4">
+            <h2>Payment:</h2>
+            <input type="radio" name="placanje" id="kes" value="kes" checked> Cash
+            <input type="radio" name="placanje" id="kartica" value="kartica"> Card
+        </div>
+    </div>
+
+    <div class="row third">
+        <div class="col-6">
+            <button id="izracunaj">Calculate the amount</button>
+        </div>
+        <div class="col-6">
+            <button type="reset" id="resetuj">Reset</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="row fourth">
+        <div class="col-12">
+            <h2>Your order:</h2>
+            <p id="ruze_pic"></p>
+            <p id="ljiljani_pic"></p>
+            <p id="gerberi_pic"></p>
+            <p id="dodatak"></p>
+
+            <p id="bez_popusta"></p>
+            <h2 id="cena"></h2>
+            <h2 id="greska"></h2>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

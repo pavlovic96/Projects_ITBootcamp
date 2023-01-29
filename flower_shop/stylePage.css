@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Sassy+Frass:regular);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px 50px;
+}
+
+.row {
+    overflow: hidden;
+    width: 100%;
+}
+
+.first {
+    border: 1px solid rgb(49, 82, 53);
+}
+
+h1 {
+    color: rgb(49, 82, 53);
+    font-size: 190px;
+    font-weight: lighter;
+    font-family: 'Sassy Frass';
+    padding-top: 60px;
+    text-align: center;
+}
+
+.pic {
+    background-image: url('pictures/bouquet.jpg');
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.second {
+    padding: 40px;
+    color: rgb(251, 251, 251);
+    text-align: center;
+    background-color: rgb(222, 169, 69);
+    font-size: 40px;
+    font-family: 'Sassy Frass';
+    margin-top: 20px;
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 70px;
+}
+
+.second input {
+    padding: 7px;
+    margin: 5px;
+    border: 1px solid rgb(253, 253, 253);
+    border-radius: 15px;
+    background-color: rgb(222, 169, 69);
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.second input::placeholder {
+    color: rgba(255, 255, 255, 0.646);
+}
+
+.third button {
+    width: 100%;
+    margin-top: 5px;
+    border: 2px solid rgb(222, 169, 69);
+    background-color: white;
+    font-size: 60px;
+    color: rgb(222, 169, 69);
+    font-family: 'Sassy Frass';
+}
+
+.third button:hover {
+    background-color: rgb(63, 82, 65);
+    color: #dedee0;
+    border: 1px solid #dedee0;
+}
+
+.fourth h2 {
+    text-align: center;
+    font-family: 'Sassy Frass';
+    color: rgb(222, 169, 69);
+}
+
+.fourth h2{
+    text-align: center;
+    font-family: 'Sassy Frass';
+}
+
+.fourth p {
+    text-align: center;
+    font-family: 'Sassy Frass';
+    font-size: 40px;
+}
+
+img {
+    width: 70px;
+}
+
+/* /////////////////////////////////////////////////////// */
+@media only screen and (max-width:500px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .side {
+        display: none;
+    }
+
+    img {
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    [class*="col-"] {
+        float: left;
+    }
+
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
