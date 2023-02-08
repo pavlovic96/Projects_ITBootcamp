@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITBootcamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-2 none">&nbsp;</div>
+
+        <div class="col-8 wrap">
+            <header>
+                <h1>IT<span>Bootcamp</span></h1>
+                <img src="pictures/pic.jpg" id="chat">
+            </header>
+
+            <h3>Choose a chatroom</h3>
+
+            <div class="row">
+                <div id="nav">
+                    <button class="col-3">#general</button>
+                    <button class="col-3">#js</button>
+                    <button class="col-3">#homeworks</button>
+                    <button class="col-3">#tests</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1 none">&nbsp;</div>
+                <div class="col-10 chat">
+                    <ul>
+                        <!-- MESSAGES -->
+                    </ul>
+                </div>
+                <div class="col-1 none">&nbsp;</div>
+            </div>
+
+            <div class="row">
+                <div class="col-2 none">&nbsp;</div>
+                <div class="col-8">
+                    <form id="form0">
+                        <input type="color" name="color" id="color" value='#ffffff'>
+                        <button id="btn_color">Update color</button>
+                    </form>
+                </div>
+                <div class="col-2 none">&nbsp;</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-2 none">&nbsp;</div>
+                <div class="col-8">
+                    <form id="form1">
+                        <textarea name="text" id="input_mess" rows="1" placeholder="Your message..."></textarea>
+                        <button id="btn_send">Send</button>
+                    </form>
+                </div>
+                <div class="col-2 none">&nbsp;</div>
+            </div>
+
+            <div class="row">
+                <div class="col-2 none">&nbsp;</div>
+                <div class="col-8">
+                    <form id="form2">
+                        <input type="text" placeholder="Update username" id="input_username">
+                         <button id="btn_username">Update</button>
+                    </form>
+                </div>
+                <div class="col-2 none">&nbsp;</div>
+            </div>
+
+            <p>
+                <!-- USERNAME UPDATE -->
+            </p>
+        </div>
+        <div class="col-2 none">&nbsp;</div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDqDqhlZOkpBUYnYX0jjxSinPWyaYOmATM",
+            authDomain: "itbootcamp-1.firebaseapp.com",
+            projectId: "itbootcamp-1",
+            storageBucket: "itbootcamp-1.appspot.com",
+            messagingSenderId: "1081416281322",
+            appId: "1:1081416281322:web:5edd1cb5845ae225fafb93",
+            measurementId: "G-H2RPSK4FKQ"
+        };
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+    </script>
+
+    <script src="app.js" type="module"></script>
+
+</body>
+
+</html>
