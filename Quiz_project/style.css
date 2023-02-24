@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(230, 223, 213);
+}
+
+
+form {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+div, input {
+    border: 1px solid orange;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+#submit:hover , #reset:hover {
+    background-color: orange;
+    color: white;
+}
